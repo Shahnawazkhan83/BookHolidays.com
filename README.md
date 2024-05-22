@@ -1,19 +1,57 @@
-# Setting Up the MERN Booking App
+# BookHolidays.com
+
+BookHolidays.com is a robust hotel booking application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers a seamless experience for users to browse and book hotel rooms, featuring secure user authentication, detailed room descriptions, and easy booking management. Administrators can efficiently manage rooms, bookings, and users. Enjoy secure online payments and a user-friendly interface with BookHolidays.com, making your holiday planning effortless and enjoyable.
+
+## Features
+
+### User Features:
+- **User Authentication**: Secure sign-up and login with password encryption.
+- **Profile Management**: Update personal information and view booking history.
+- **Hotel Browsing**: Browse available hotels and rooms with detailed descriptions and images.
+- **Room Booking**: Book rooms with specified check-in and check-out dates.
+- **Booking Management**: View, modify, and cancel bookings.
+- **Payment Integration**: Secure online payments for booking confirmations.
+
+### Admin Features:
+- **User Management**: View and manage user accounts.
+- **Room Management**: Add, edit, and remove rooms and their details.
+- **Booking Management**: View all bookings and manage their status.
+
+## Tech Stack
+
+### Frontend:
+- **React.js**: For building a responsive and dynamic user interface.
+- **Redux**: For state management.
+- **React Router**: For navigation and routing.
+
+### Backend:
+- **Node.js**: For the server-side runtime environment.
+- **Express.js**: For the backend framework and routing.
+- **MongoDB**: For the database to store user, room, and booking information.
+- **Mongoose**: For object data modeling (ODM) with MongoDB.
+
+### Additional Tools:
+- **JWT**: For user authentication.
+- **Bcrypt.js**: For password hashing.
+- **Stripe**: For payment processing.
+- **Cloudinary**: For image hosting.
+- **Render**: For deployment.
+
+## Setting Up the MERN Booking App
 
 This guide will walk you through the process of setting up the MERN Booking App on your local machine.
 
-## Prerequisites
+### Prerequisites
 
 Before you begin, ensure you have Node.js installed on your system.
 
-## Cloning the Repository
+### Cloning the Repository
 
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/chrisblakely01/mern-booking-app.git
-cd mern-booking-app
-```
+git clone https://github.com/Shahnawazkhan83/BookHolidays.com.git
+
 
 ## Backend Configuration
 
@@ -54,7 +92,7 @@ cd mern-booking-app
     - This just needs to be any long, random string. You can google "secret key generator".
 
 7. **Frontend URL**:
-    - The `FRONTEND_URL` should point to the URL where your frontend application is running (typically `http://localhost:3000` if you're running it locally).
+    - The `FRONTEND_URL` should point to the URL where your frontend application is running (typically `http://localhost:5174` if you're running it locally).
   
 
 ## Frontend Configuration
@@ -80,7 +118,7 @@ cd mern-booking-app
     - Open a new terminal and navigate to the `frontend` directory.
     - Install dependencies: `npm install`.
     - Start the frontend application: `npm run dev`.
-    - The application should now be running on `http://localhost:5173` but verify this in your command line terminal  
+    - The application should now be running on `http://localhost:5174` but verify this in your command line terminal  
 
 
 ## Running Automated Tests
@@ -104,7 +142,7 @@ cd mern-booking-app
         - Browse to the location of your `test-users.json` file and select it.
         - Choose JSON as the file format and click "Import".
         - The test user data will be added to the `users` collection.
-        - user login: 1@1.com/password123
+
     -  **Locate the Test Hotel File**:
         - Navigate to the `hotels` collection within your database. Create it if it doesn't exist
         - Repeat the import process as you did for the user data, but this time select the `test-hotel.json` file.
