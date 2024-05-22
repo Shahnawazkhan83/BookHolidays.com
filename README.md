@@ -2,6 +2,10 @@
 
 BookHolidays.com is a robust hotel booking application built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers a seamless experience for users to browse and book hotel rooms, featuring secure user authentication, detailed room descriptions, and easy booking management. Administrators can efficiently manage rooms, bookings, and users. Enjoy secure online payments and a user-friendly interface with BookHolidays.com, making your holiday planning effortless and enjoyable.
 
+## Live Website
+
+Check out the live website: [BookHolidays.com](https://bookholidays-com.onrender.com/)
+
 ## Features
 
 ### User Features:
